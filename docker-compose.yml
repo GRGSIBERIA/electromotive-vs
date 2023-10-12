@@ -1,0 +1,8 @@
+version: '3'
+services:
+  electromotive:
+    image: 'gcc:latest'
+    volumes:
+      - ./cpp:/src/cpp
+    working_dir: /src/cpp
+    command: ./src/build.sh
